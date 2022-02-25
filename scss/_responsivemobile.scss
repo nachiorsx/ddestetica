@@ -1,0 +1,305 @@
+/* Mobile */
+@media (max-width: 480px) {
+    .gridAreas {
+        display: grid;
+        grid-template-areas:
+        /* Fila 1 */    
+        "encabezado"
+        /* Fila 2 */
+        "menu"
+        /* Fila 3 */
+        "principal"
+        /* Fila 4 */
+        "pie";
+        grid-template-columns: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .logo {
+            padding: 0%;
+        }
+        .logoImagen{
+            border: solid 1px map-get($map: $colores, $key: $colorVioleta);
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 1%;
+        }
+        h1{
+            color: map-get($map: $colores, $key: $colorVioleta);
+            font-size: 40px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    }
+    .responsiveMobile{
+        display: none;
+    }
+    /* Estilos al Nav */
+    nav{
+        background-color: map-get($map: $colores, $key: $colorNav);
+        border-top:groove 2px black;
+        border-bottom:groove 2px black;
+        section{
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.2%;
+            align-items: center;
+            span{
+                padding: 1%;
+                font-size: 20px;
+                a{
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    /* Estilos al Main */
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .sectionMainUno{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 1%;
+        }
+        .sectionMainDos{
+            display: flex;
+            justify-content: center;
+            .tamañoImagen{
+                width: 80%;
+            }
+        }
+        .sectionMainTres{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .suscribirse{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        padding: 1%;
+    }
+    section input{
+        padding: 0%;
+        margin: 0%;
+    }
+    .sectionMainUno{
+        order: 1;
+    }
+    /* Estilos al Footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: map-get($map: $colores, $key: $colorCeleste);
+        section{
+            h2{
+                font-size: 25px;
+                color: map-get($map: $colores, $key: $colorVioleta);
+            }
+        }
+        section{
+            p{
+                @include fonts (20px, 800);
+            }
+        }
+    }
+    footer{
+        .sectionFooterUno{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 0%;
+        }
+        h2{
+            .tituloUbicacion{
+                margin-left: 0%;
+            }
+        }
+        .sectionFooterDos{
+            display: flex;
+            flex-direction: column;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            width: 100%;
+            order: 1;
+        }
+        .sectionFooterTres{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0%;
+        }
+    }
+    .alineacionDatos{
+        font-weight: 700;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .textoCentradoMobile{
+        text-align: center;
+    }
+    footer{
+        section{
+            section{
+                .alineacionRedes{
+                    /* Alineacion Redes Sociales */
+                    margin-bottom: 1%;
+                    padding-bottom: 1%;
+                    font-size: 20px;
+                }
+                .alineacionFacebook{
+                    /* Alineacion Facebook */
+                    margin-left: 19%;
+                    font-size: 18px;
+                }
+                .alineacionInstagram{
+                    /* Alineacion Instagram */
+                    margin-left: 18%;
+                    font-size: 18px;
+                }
+                .alineacionEmail{
+                    /* Alineacion Email */
+                    margin-left: 29%;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    /* Clases a Contacto.html */
+    /* Alineacion Formulario */
+    .mainContacto{
+        display: flex
+    }
+    main{
+        section{
+            .textoGrande{
+                font-size: 50px;
+                margin-top: 0.5%;
+            }
+        }
+    }
+    main{
+        .sectionFormularioUno{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            /* Alineacion botones formulario */
+            .alineacionEnviar{
+                border-color: map-get($map: $colores, $key: $colorCeleste);
+                padding: 3%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+            .alineacionBorrar{
+                border-color: map-get($map: $colores, $key: $colorCeleste);
+                padding: 3%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+    /* Clases Galeria */
+    /* Titulo */
+    .mainGaleria{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        .sectionGaleriaUno{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sectionGaleriaDos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sectionGaleriaTres{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sectionGaleriaCuatro{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sectionGaleriaCinco{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sectionGaleriaSeis{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            }
+    }
+    main{
+        .titulo{
+            font-size: 50px;
+        }
+    }
+    /* Borde Imagenes */
+    .borde{
+        border: solid 3px map-get($map: $colores, $key: $colorCeleste);
+        margin-top: 1%;
+        margin-bottom: 0.5%;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 95%
+    }
+    /* Parrafo Imagenes */
+    .parrafo{
+        @include fonts (30px, 600);
+    }
+    /* Clases Servicios */
+    main{
+        .tituloservicio{
+            /* Titulo Servicios */
+            text-align: center;
+            @include fonts (40px, 800);
+            margin-top: 1%;
+        }
+        section{
+            .articleServicios{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                /* Imagen con resultado final */
+                .imagen{
+                    margin-top: 0.2%;
+                    margin-bottom: 1%;
+                    margin-left: 0%;
+                    border: solid 3px map-get($map: $colores, $key: $colorCeleste);
+                }
+            }
+        }
+    }
+    /* Descripcion */
+    article{
+        h2{
+            .descripcion{
+                margin-left: 1%;
+                margin-right: 1%;
+                margin-top: 0.2%;
+                font-size: 20px;
+            }
+        }
+    }
+}
